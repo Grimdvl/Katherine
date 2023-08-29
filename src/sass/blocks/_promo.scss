@@ -1,0 +1,73 @@
+.promo {
+    background-color: $light;
+    height: 770px;
+    position: relative;
+    &__hamburger {
+        display: none;
+    }
+    &__photo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 600px;
+        top: 85px;
+    }
+    &__buttons {
+        display: flex;
+        width: 150px;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 50px;
+        &__item {
+            color: $grey;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .active {
+            color: black;
+        }
+        a {
+            &:hover {
+                transition: color 0.25s ease 0s;
+                color: black;
+            }
+            &:not(:hover) {
+                transition: color 0.25s ease 0s;
+            }
+        }
+    }
+    &__switch {
+        position: absolute;
+        right: 0;
+        top: 22px;
+        height: 20px;
+        img {
+            height: 30px;
+        }
+        &__moon {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s all;
+            right: 0;
+            &__active {
+                visibility: visible;
+                opacity: 1;
+                transition: 0.25s all 0.25s;
+            }
+        }
+        &__sun {
+            position: absolute;
+            right: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.2s all;
+            &__active {
+                visibility: visible;
+                opacity: 1;
+                transition: 0.25s all 0.25s;
+            }
+        }
+    }
+}

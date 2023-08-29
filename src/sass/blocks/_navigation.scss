@@ -1,0 +1,46 @@
+.navigation {
+    position: fixed;
+    top: 50%;
+    right: 70px;
+    transform: translateY(-50%);
+    z-index: 3;
+    &__circles {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            position: relative;
+            width: 12px;
+            height: 12px;
+            border: 2px solid $dark;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: background-color 0.25s ease;
+        }
+        li.li-active, li.li-activeScroll {
+            background-color: $dark;
+        }
+        &__item {
+            position: absolute;
+            right: 0;
+            margin-right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $dark;
+            padding: 4px 8px;
+            border-radius: 4px;
+            opacity: 0;
+            transition: opacity 0.25s ease, visibility 0.25s ease;
+            text-decoration: none;
+            white-space: nowrap;
+            z-index: 3;
+            visibility: hidden;
+        }
+        &__item.active, .activeScroll {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

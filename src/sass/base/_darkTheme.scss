@@ -1,0 +1,106 @@
+body {
+    background-color: $dark;
+    color: $light;
+} 
+
+.promo {
+    background-color: $grey;
+    &__buttons {
+        &__item {
+            color: $light;
+        }
+        .active {
+            color: white;
+        }
+        a {
+            &:hover {
+            color: white;
+            }
+        }
+    }
+    &__hamburger {
+        span {
+            background-color: $light;
+        }
+    }
+    &__title, .name-right, .name-left, .surname-right, .surname-left, .name-left-ua, .right-profession{
+        color: $light;
+    }
+}
+
+.menu {
+    &__block {
+        background-color: $dark;
+    }
+    &__overlay {
+        background-color: $grey;
+    }
+}
+
+.navigation {
+    &__circles {
+        li {
+            border-color: $light;
+        }
+        li.li-active, li.li-activeScroll {
+            background-color: $light;
+        }
+        &__item {
+            color: $light;
+        }
+    }
+}
+
+.education .container, .contacts .container {
+    border-color: $grey;
+}
+.education {
+    &__institution {
+        color: $light;
+    }
+}
+.contacts {
+    &__wrapper {
+        &__first {
+            a {
+                color: $light;
+            }
+        }
+    }
+    &__social {
+        &__item {
+            background-color: $light;
+            border-color: $light;
+        }
+    }
+    &__input {
+        input {
+            background-color: $light;
+        }
+    }
+    &__textarea {
+        textarea {
+            background-color: $light;
+        }
+    }
+}
+
+.footer {
+    &__creator {
+        &__name {
+            color: $light;
+        }
+    }
+}
+
+.modal {
+    background-color: rgba(0,0,0,.5);
+    &__content {
+        background-color: $dark;
+    }
+    &__close {
+        span {
+            background: $light;
+        }
+    }
+}

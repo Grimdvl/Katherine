@@ -1,0 +1,12 @@
+@mixin animation {
+    visibility: hidden;
+    animation-name: none;
+}
+
+@mixin animated {
+    visibility: visible;
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
