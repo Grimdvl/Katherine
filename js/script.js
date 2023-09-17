@@ -370,10 +370,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function openModal() {
         modal.classList.add('show');
+        modal.classList.remove('hide');
         document.body.style.overflow = 'hidden';
     }
     function closeModal() {
-        // modal.classList.add('hide');
+        modal.classList.add('hide');
         modal.classList.remove('show');
         document.body.style.overflow = '';
     }
@@ -409,7 +410,6 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.append(thanksModal);
         setTimeout(() => {
             thanksModal.remove();
-            prevModalDialog.classList.add('show');
             prevModalDialog.classList.remove('hide');
             closeModal();
         }, 2000);
