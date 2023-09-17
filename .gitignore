@@ -11,8 +11,8 @@ dist/
 .pnp.js
 /.publish
 .publish/
-mailer/
-db.json
+/package-lock.json
+package-lock.json/
 
 # testing
 /coverage

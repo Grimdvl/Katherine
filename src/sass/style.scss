@@ -35,14 +35,6 @@ body {
     background-color: rgba(255, 234, 224, 0.5);
 }
 
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
-
 .education, .experience {
     .divider {
         height: 120px;
@@ -69,3 +61,11 @@ body {
 
 @import 'base/media';
 // @import 'base/darkTheme';
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
